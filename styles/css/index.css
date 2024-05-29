@@ -1,17 +1,47 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "variables.scss";
- *   |         ^^^^^^^^^^^^^^^^
- *   '
- *   styles\index.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"variables.scss\";\d\a   \2502          ^^^^^^^^^^^^^^^^\a   \2575 \a   styles\\index.scss 1:9  root stylesheet";
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section-1, .section-2, .section-3, .section-4, .section-5 {
+  padding: 16px;
+}
+
+.section-3 {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black; /* не забыть убрать */
+}
+
+.promotion-text {
+  border: 1px solid black; /* не забыть убрать */
+}
+
+.promotion-text__button {
+  border: 1px solid black; /* не забыть убрать */
+}
+
+.promotion-pic {
+  border: 1px solid black; /* не забыть убрать */
+  width: 410px;
+  height: 320px;
+  background-image: url(/assets/images/big-cup.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.promotion-pic__rectangle {
+  background-color: #E3EBE7;
+  width: 410px;
+  height: 276px;
+  background-size: contain;
+}
+
+/*# sourceMappingURL=index.css.map */

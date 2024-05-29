@@ -1,0 +1,29 @@
+// <!-- Раздел сайта блок "section-2" - Арина -->
+// <!-- Раздел сайта блок "section-3" - Настя -->
+.section-3 {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black; /* не забыть убрать */
+}
+.promotion-text {
+    border: 1px solid black; /* не забыть убрать */
+}
+.promotion-text__button {
+    border: 1px solid black; /* не забыть убрать */
+}
+.promotion-pic {
+    border: 1px solid black; /* не забыть убрать */
+    width: 410px;
+    height: 320px;
+    background-image: url(/assets/images/big-cup.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.promotion-pic__rectangle {
+    background-color: #E3EBE7;
+    width: 410px;
+    height: 276px;
+    background-size: contain;
+}
+
+// <!-- Раздел сайта блок "section-4" - Раиса -->
