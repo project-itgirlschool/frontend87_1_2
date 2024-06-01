@@ -1,29 +1,92 @@
 // <!-- Раздел сайта блок "section-2" - Арина -->
 // <!-- Раздел сайта блок "section-3" - Настя -->
 .section-3 {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid black; /* не забыть убрать */
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black; /* не забыть убрать */
 }
 .promotion-text {
-    border: 1px solid black; /* не забыть убрать */
+  border: 1px solid black; /* не забыть убрать */
 }
 .promotion-text__button {
-    border: 1px solid black; /* не забыть убрать */
+  border: 1px solid black; /* не забыть убрать */
 }
 .promotion-pic {
-    border: 1px solid black; /* не забыть убрать */
-    width: 410px;
-    height: 320px;
-    background-image: url(/assets/images/big-cup.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+  border: 1px solid black; /* не забыть убрать */
+  width: 410px;
+  height: 320px;
+  background-image: url(/assets/images/big-cup.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .promotion-pic__rectangle {
-    background-color: #E3EBE7;
-    width: 410px;
-    height: 276px;
-    background-size: contain;
+  background-color: #e3ebe7;
+  width: 410px;
+  height: 276px;
+  background-size: contain;
 }
 
 // <!-- Раздел сайта блок "section-4" - Раиса -->
+.section-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #f0f5f5; /* Background color */
+  padding: 20px;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f5f5;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.arrow img {
+  width: 20px;
+  height: 20px;
+}
+
+.product {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+}
+
+.product_title {
+  font-family: "Arial", sans-serif; /* Временный шрифт */
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product_caption {
+  font-family: "Arial", sans-serif; /* Временный шрифт */
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.product_button {
+  background-color: #004d40;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: "Arial", sans-serif; /* Временный шрифт */
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.product_button:hover {
+  background-color: #00332c;
+}
