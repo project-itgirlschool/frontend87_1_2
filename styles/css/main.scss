@@ -2,8 +2,7 @@
 // <!-- Раздел сайта блок "section-3" - Настя -->
 .section-3 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     border: 1px solid black; /* не забыть убрать */
