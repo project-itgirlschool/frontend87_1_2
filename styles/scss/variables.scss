@@ -1,1 +1,35 @@
-// Переменные для шрифтов и цветов - Аня 
+// Переменные для шрифтов и цветов - Настя
+$font-family: "Josefin Sans", sans-serif;
+$second-family: "Alegreya Sans", sans-serif;
+$third-family: "Cedarville Cursive", sans-serif;
+$font3: "Varela Round", sans-serif; // замена George Round на бесплатный Varela Round
+$font4: "Roboto", sans-serif;
+$primary---green: #2d635e;
+$primary---yellow-pink: #fae9e0;
+$secondary---light-gray: #e3ebe7;
+$secondary---hard-green: #444a4a;
+$secondary---light-green: #F4F7F6; // ввела дополнительный цвет для упрощения создания фона в section-4
+$main---black: #000;
+$main---white: #fff;
+
+// Стиль кнопок - Настя
+.menu_button, .greetings_button, .promotion-text__button, .product_button {
+display: inline-block; // ?
+    padding: 10px 20px;
+    background-color: $primary---green;
+    color: $main---white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: $font3;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: $main---white;
+    text-align: center;
+    text-decoration: none;
+// transition: background-color 0.3s ease; // ?
+}
+.menu_button .greetings_button .promotion-text__button .product_button:hover {
+    background-color: $secondary---hard-green;
+}
