@@ -15,11 +15,6 @@
   margin-right: 20px;
 }
 .promotion-text__title {
-  font-family: $font-family;
-  font-weight: 700;
-  font-size: 38px;
-  color: $main---black;
-  // font-size: 2em;
   margin-bottom: 10px;
 }
 .promotion-text__caption {
@@ -68,11 +63,7 @@
   position: absolute;
   right: -45px;
   top: 10%;
-  transform: rotate(270deg) translateY(-50%);
-  font-family: $third-family;
-  font-weight: 400;
-  font-size: 28px;
-  color: $main---black;       
+  transform: rotate(270deg) translateY(-50%);    
 }
 
 // <!-- Раздел сайта блок "section-4" - Раиса (откорректировала Настя с учетом ввода переменных шрифтов и цветов) -->
@@ -111,16 +102,11 @@
   width: 250px;
 }
 
-.product_title {
-  font-family: $font-family;
-  font-weight: 700;
-  font-size: 28px;
-  text-align: center;
-  color: $main---black;
+.product__title {
   margin-bottom: 10px;
 }
 
-.product_caption {
+.product__caption {
   font-family: $second-family;
   font-weight: 400;
   font-size: 19px;
@@ -131,7 +117,7 @@
   margin-bottom: 20px;
 }
 
-// .product_button {             Перевела папаметры кнопки в коммментарии, так как ввела стилизацию для всех кнопок сайта 
+// .product__button {             Перевела папаметры кнопки в коммментарии, так как ввела стилизацию для всех кнопок сайта 
 //   background-color: #004d40;  в variables.scss. Потом можно удалить этот кусок. - Настя
 //   color: #fff;
 //   border: none;
@@ -142,6 +128,6 @@
 //   cursor: pointer;
 // }
 
-// .product_button:hover {
+// .product__button:hover {
 //   background-color: #00332c;
 // }

@@ -1,4 +1,4 @@
-.menu_button, .greetings_button, .promotion-text__button, .product_button {
+.menu__button, .greeting-area__button, .promotion-text__button, .product__button {
   display: inline-block;
   padding: 10px 20px;
   background-color: #2d635e;
@@ -15,8 +15,36 @@
   text-decoration: none;
 }
 
-.menu_button .greetings_button .promotion-text__button .product_button:hover {
+.menu__button .greeting-area__button .promotion-text__button .product__button:hover {
   background-color: #444a4a;
+}
+
+h1, h2, h3 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #000;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 63px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 38px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+}
+
+h4 {
+  font-family: "Cedarville Cursive", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #000;
 }
 
 .section-3 {
@@ -32,10 +60,6 @@
 }
 
 .promotion-text__title {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
-  font-size: 38px;
-  color: #000;
   margin-bottom: 10px;
 }
 
@@ -77,10 +101,6 @@
   right: -45px;
   top: 10%;
   transform: rotate(270deg) translateY(-50%);
-  font-family: "Cedarville Cursive", sans-serif;
-  font-weight: 400;
-  font-size: 28px;
-  color: #000;
 }
 
 .section-4 {
@@ -118,16 +138,11 @@
   width: 250px;
 }
 
-.product_title {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  text-align: center;
-  color: #000;
+.product__title {
   margin-bottom: 10px;
 }
 
-.product_caption {
+.product__caption {
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 400;
   font-size: 19px;
