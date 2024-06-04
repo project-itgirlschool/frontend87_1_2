@@ -14,7 +14,7 @@ $main---white: #fff;
 
 // Стиль кнопок - Настя
 .menu__button, .greeting-area__button, .promotion-text__button, .product__button {
-display: inline-block; // ?
+    display: inline-block; // ?
     padding: 10px 20px;
     background-color: $primary---green;
     color: $main---white;
