@@ -1,3 +1,53 @@
+// Раздел сайта блок "section-1" - Настя
+.section-1 {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 40px;
+}
+.section-1-column-1 {
+  position: relative;
+}
+.section-1-column-2 {
+  display: flex;
+  position: relative;
+}
+.greeting-area {
+  
+}
+.greeting-area__tagline {
+  font-family: $third-family;
+  font-weight: 400;
+  font-size: 28px;
+  color: $secondary---hard-green;
+}
+.arrow-link {
+// background-size: 159px 157px;
+background-color: $secondary---light-gray;
+opacity: 0.4;
+}
+.greeting-pic {
+  position: relative;
+  // display: inline-block;
+  width: 410px;
+  height: 513px;
+}
+.greeting-pic__image_cup {
+  position: relative;
+  width: 90%;
+  display: block;
+  left: 6%;
+  bottom: -32%;
+}
+.greeting-pic__rectangle {
+  background-color: $secondary---light-gray;
+  width: 410px;
+  height: 466px; 
+  position: absolute;
+  top: 9%;
+  left: 0;
+  z-index: -1;
+}
 // <!-- Раздел сайта блок "section-2" - Настя -->
 .section-2 {
   display: flex;
