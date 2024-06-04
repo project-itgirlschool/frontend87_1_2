@@ -1,6 +1,57 @@
-// <!-- Раздел сайта блок "section-2" - Арина -->
-
-
+// <!-- Раздел сайта блок "section-2" - Настя -->
+.section-2 {
+  display: flex;
+  align-items: center;
+  // flex-wrap: wrap;
+  padding: 20px;
+  margin: 40px;
+}
+.about-us-pic {
+  position: relative;
+  // display: inline-block;
+  width: 410px;
+  height: 340px;
+}
+.about-us-pic__image_cup {
+  position: relative;
+  stroke-width: 4px;
+  stroke: #af9283;
+  width: 90%;
+  display: block;
+  left: 6%;
+  bottom: -32%;
+}
+.about-us-pic__rectangle {
+  background-color: $primary---yellow-pink;
+  width: 380px;
+  height: 287px; 
+  position: absolute;
+  top: 9%;
+  left: 0;
+  z-index: -1;
+}
+.about-us-pic__heading {
+  position: absolute;
+  left: -20px;
+  top: 11%;
+  transform: rotate(270deg) translateY(-50%);    
+}
+.about-us-text {
+  flex: 1;
+  margin-right: 20px;
+}
+.about-us-text__title {
+  margin-bottom: 10px;
+}
+.about-us-text__caption-1, .about-us-text__caption-2 {
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 189%;
+  letter-spacing: 0em;
+  color: $secondary---hard-green;
+  margin-bottom: 20px;
+}
 
 // <!-- Раздел сайта блок "section-3" - Настя -->
 .section-3 {
@@ -51,7 +102,7 @@
   left: 15%;
 }
 .promotion-pic__rectangle {
-  background-color: #e3ebe7;
+  background-color: $secondary---light-gray;
   width: 410px;
   height: 276px; 
   position: absolute;
@@ -61,7 +112,7 @@
 }
 .promotion-pic__heading {
   position: absolute;
-  right: -45px;
+  right: -75px;
   top: 10%;
   transform: rotate(270deg) translateY(-50%);    
 }

@@ -35,19 +35,17 @@ display: inline-block; // ?
 }
 // Стили заголовков - Настя
 h1, h2, h3 {
+    font-weight: 500; // по макету 700, но 500 больше похож на визуальное отображение в макете
     font-family: $font-family;
     color: $main---black;
 }
 h1 {
-    font-weight: 700;
     font-size: 63px;
 }
 h2 {
-    font-weight: 700;
     font-size: 38px;
 }
 h3 {
-    font-weight: 700;
     font-size: 28px;
     text-align: center;
 }
