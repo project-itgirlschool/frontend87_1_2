@@ -1,3 +1,82 @@
+//Раздел Header - Раиса
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 40px;
+}
+.logo__pic {
+  height: 37px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+}
+.logo__text {
+  height: 50px;
+  margin-bottom: 20px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+.menu li {
+  margin-left: 20px;
+}
+.menu a {
+  text-decoration: none;
+  font-family: $font-family;
+  color: $main---black;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 50px;
+}
+.menu__button {
+  margin-bottom: 15px;
+}
+//Планшет - 720px
+@media (max-width: 720px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .menu ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .menu a,
+  .menu__button {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+//Телефон - 375px
+
 // Раздел сайта блок "section-1" - Настя
 .section-1 {
   display: flex;
@@ -48,35 +127,35 @@
   display: none;
 }
 .arrow-link {
-// background-size: 159px 157px;
-background-color: $secondary---light-gray;
-// opacity: 0.4;
+  // background-size: 159px 157px;
+  background-color: $secondary---light-gray;
+  // opacity: 0.4;
 
-width: 50px;
-height: 50px;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-bottom: 20px;
-cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 .arrow-link img {
   width: 24px;
   height: 24px;
 }
 .greeting-pic {
-    // flex: 1;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+  // flex: 1;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   position: relative;
   // display: inline-block;
   // width: 410px;
   // height: 513px;
 }
 .greeting-pic__image_coffee-mill {
-    width: 300px;
-    height: auto;
+  width: 300px;
+  height: auto;
   // position: relative;
   // width: 90%;
   // display: block;
@@ -89,25 +168,25 @@ cursor: pointer;
 .greeting-pic__rectangle {
   background-color: $secondary---light-gray;
   width: 410px;
-  height: 466px; 
+  height: 466px;
   position: absolute;
   top: 50px;
-left: 50px;
+  left: 50px;
   // top: 9%;
   // left: 0;
   z-index: -1;
 }
 .links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // justify-content: center;
-    // position: absolute;
-    // right: -50px;
-    // top: 50%;
-    // transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  // position: absolute;
+  // right: -50px;
+  // top: 50%;
+  // transform: translateY(-50%);
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .links-link {
   // list-style: none;
@@ -117,8 +196,8 @@ left: 50px;
   //   flex-direction: column;
   //   gap: 10px;
 
-    list-style-type: none;
-    margin-bottom: 10px;
+  list-style-type: none;
+  margin-bottom: 10px;
 }
 .links__link img {
   width: 30px;
@@ -129,22 +208,21 @@ left: 50px;
   flex-direction: column;
   align-items: center;
   position: relative;
-top: 50px;
+  top: 50px;
 }
 .socials__caption {
   writing-mode: vertical-rl;
-    transform: rotate(-90deg);
-    margin: 0;
-    font-family: $font-family;
-    font-weight: 400;
-    font-size: 28px;
-    color: $secondary---hard-green;
+  transform: rotate(-90deg);
+  margin: 0;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 28px;
+  color: $secondary---hard-green;
 
-
-    position: absolute;
-    right: -50px;
-    top: 50%;
-    transform-origin: center;
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform-origin: center;
 }
 // <!-- Раздел сайта блок "section-2" - Настя -->
 .section-2 {
@@ -172,7 +250,7 @@ top: 50px;
 .about-us-pic__rectangle {
   background-color: $primary---yellow-pink;
   width: 380px;
-  height: 287px; 
+  height: 287px;
   position: absolute;
   top: 9%;
   left: 0;
@@ -182,7 +260,7 @@ top: 50px;
   position: absolute;
   left: -20px;
   top: 11%;
-  transform: rotate(270deg) translateY(-50%);    
+  transform: rotate(270deg) translateY(-50%);
 }
 .about-us-text {
   flex: 1;
@@ -191,7 +269,8 @@ top: 50px;
 .about-us-text__title {
   margin-bottom: 10px;
 }
-.about-us-text__caption-1, .about-us-text__caption-2 {
+.about-us-text__caption-1,
+.about-us-text__caption-2 {
   font-family: $second-family;
   font-weight: 400;
   font-size: 19px;
@@ -225,7 +304,7 @@ top: 50px;
   color: $secondary---hard-green;
   margin-bottom: 20px;
 }
-// .promotion-text__button {   Перевела папаметры кнопки в коммментарии, так как ввела стилизацию для всех кнопок сайта 
+// .promotion-text__button {   Перевела папаметры кнопки в коммментарии, так как ввела стилизацию для всех кнопок сайта
 //   padding: 10px 20px;       в variables.scss. Потом можно удалить этот кусок. - Настя
 //   background-color: #2D635E;
 //   color: #fff;
@@ -252,7 +331,7 @@ top: 50px;
 .promotion-pic__rectangle {
   background-color: $secondary---light-gray;
   width: 410px;
-  height: 276px; 
+  height: 276px;
   position: absolute;
   top: 9%;
   left: 0;
@@ -262,7 +341,7 @@ top: 50px;
   position: absolute;
   right: -75px;
   top: 10%;
-  transform: rotate(270deg) translateY(-50%);    
+  transform: rotate(270deg) translateY(-50%);
 }
 
 // <!-- Раздел сайта блок "section-4" - Раиса (откорректировала Настя с учетом ввода переменных шрифтов и цветов) -->
@@ -316,7 +395,7 @@ top: 50px;
   margin-bottom: 20px;
 }
 
-// .product__button {             Перевела папаметры кнопки в коммментарии, так как ввела стилизацию для всех кнопок сайта 
+// .product__button {             Перевела папаметры кнопки в коммментарии, так как ввела стилизацию для всех кнопок сайта
 //   background-color: #004d40;  в variables.scss. Потом можно удалить этот кусок. - Настя
 //   color: #fff;
 //   border: none;
@@ -334,19 +413,22 @@ top: 50px;
 // Медиа-запрос для экранов мобильных телефонов шириной 375px
 
 @media (max-width: 375px) {
-  .about-us-pic__heading, .promotion-pic__heading, .map__heading {
+  .about-us-pic__heading,
+  .promotion-pic__heading,
+  .map__heading {
     display: none;
   }
   .section-1 {
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
   }
-  .section-1-column-1, .section-1-column-2 {
-      flex: none;
-      padding: 0;
-      width: 100%;
-      text-align: center;
+  .section-1-column-1,
+  .section-1-column-2 {
+    flex: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
   }
   .greeting-area__tagline {
     font-weight: 400;
@@ -358,17 +440,19 @@ top: 50px;
     text-align: center;
   }
   .greeting-area__name {
-      font-size: 36px;
+    font-size: 36px;
   }
   .greeting-area-button-container__button_order-here-arrow {
-      display: block;
-      // align-items: center;
-      // margin: 10px 0;
-      // width: 80%;
-      font-size: 16px;
+    display: block;
+    // align-items: center;
+    // margin: 10px 0;
+    // width: 80%;
+    font-size: 16px;
   }
-  .greeting-area__button, .section-1-column-2, .promotion-text__button_order-now{
-      display: none;
+  .greeting-area__button,
+  .section-1-column-2,
+  .promotion-text__button_order-now {
+    display: none;
   }
 
   .section-2 {
@@ -387,15 +471,13 @@ top: 50px;
     stroke-width: 4px;
     stroke: $secondary---hard-green;
     top: -3%;
-
   }
   .about-us-pic__rectangle {
     width: 380px;
-    height: 248px; 
+    height: 248px;
     position: absolute;
     // top: 9%;
     // left: 0;
     // z-index: -1;
   }
 }
-
