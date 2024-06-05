@@ -13,7 +13,7 @@ $main---black: #000;
 $main---white: #fff;
 
 // Стиль кнопок - Настя
-.menu__button, .greeting-area__button, .promotion-text__button, .product__button {
+.menu__button, .greeting-area__button, .greeting-area-button-container__button, .promotion-text__button, .product__button {
     display: inline-block; // ?
     padding: 10px 20px;
     background-color: $primary---green;
@@ -30,7 +30,7 @@ $main---white: #fff;
     text-decoration: none;
 // transition: background-color 0.3s ease; // ?
 }
-.menu__button .greeting-area__button .promotion-text__button .product__button:hover {
+.menu__button .greeting-area__button .greeting-area-button-container__button .promotion-text__button .product__button:hover {
     background-color: $secondary---hard-green;
 }
 // Стили заголовков - Настя

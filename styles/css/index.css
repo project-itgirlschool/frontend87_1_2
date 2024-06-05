@@ -1,5 +1,4 @@
-@charset "UTF-8";
-.menu__button, .greeting-area__button, .promotion-text__button, .product__button {
+.menu__button, .greeting-area__button, .greeting-area-button-container__button, .promotion-text__button, .product__button {
   display: inline-block;
   padding: 10px 20px;
   background-color: #2d635e;
@@ -16,7 +15,7 @@
   text-decoration: none;
 }
 
-.menu__button .greeting-area__button .promotion-text__button .product__button:hover {
+.menu__button .greeting-area__button .greeting-area-button-container__button .promotion-text__button .product__button:hover {
   background-color: #444a4a;
 }
 
@@ -81,11 +80,13 @@ h4 {
   margin-bottom: 20px;
 }
 
-.greeting-area__button {
-  margin-right: 10px;
+.greeting-area-button-container__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.greeting-area__button_order-here-arrow {
+.greeting-area-button-container__button_order-here-arrow {
   display: none;
 }
 
@@ -328,8 +329,10 @@ h4 {
   margin-bottom: 20px;
 }
 
-/* Медиа-запрос для экранов шириной 375px */
 @media (max-width: 375px) {
+  .about-us-pic__heading, .promotion-pic__heading, .map__heading {
+    display: none;
+  }
   .section-1 {
     flex-direction: column;
     align-items: center;
@@ -353,12 +356,33 @@ h4 {
   .greeting-area__name {
     font-size: 36px;
   }
-  .greeting-area__button_order-here-arrow {
+  .greeting-area-button-container__button_order-here-arrow {
     display: block;
     font-size: 16px;
   }
-  .greeting-area__button_order-here, .section-1-column-2 {
+  .greeting-area__button, .section-1-column-2, .promotion-text__button_order-now {
     display: none;
+  }
+  .section-2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .about-us-pic {
+    width: 380px;
+    height: 277px;
+  }
+  .about-us-pic__image_cup {
+    width: 85%;
+    display: block;
+    stroke-width: 4px;
+    stroke: #444a4a;
+    top: -3%;
+  }
+  .about-us-pic__rectangle {
+    width: 380px;
+    height: 248px;
+    position: absolute;
   }
 }
 * {
@@ -370,6 +394,12 @@ h4 {
 body {
   max-width: 1440px;
   margin: 0 auto;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 189%;
+  letter-spacing: 0em;
+  color: #444a4a;
 }
 
 .header, .section-1, .section-2, .section-3, .section-4, .section-5 {
