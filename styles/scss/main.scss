@@ -87,17 +87,21 @@
   // padding: 50px;
   padding: 20px;
   margin: 40px;
+  margin-bottom: 120px;
 }
 .section-1-column-1 {
   // position: relative;
   flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .section-1-column-2 {
   flex: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .greeting-area {
   text-align: left;
@@ -126,17 +130,19 @@
 .greeting-area-button-container__button_order-here-arrow {
   display: none;
 }
+.arrow-link,
+.greeting-pic,
+.socials {
+  align-self: flex-end;
+}
 .arrow-link {
-  // background-size: 159px 157px;
   background-color: $secondary---light-gray;
-  // opacity: 0.4;
-
-  width: 50px;
-  height: 50px;
+  opacity: 0.4;
+  width: 159px;
+  height: 157px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
   cursor: pointer;
 }
 .arrow-link img {
@@ -145,33 +151,29 @@
 }
 .greeting-pic {
   // flex: 1;
-  // display: flex;
+  display: flex;
   // justify-content: center;
-  // align-items: center;
+  align-items: flex-end;
   position: relative;
   // display: inline-block;
-  // width: 410px;
-  // height: 513px;
+  width: 410px;
+  height: 559px;
 }
 .greeting-pic__image_coffee-mill {
-  width: 300px;
+  width: 344px;
   height: auto;
-  // position: relative;
-  // width: 90%;
+  position: relative;
   // display: block;
-  // left: 6%;
-  // bottom: -32%;
+  left: 10%;
+  bottom: -7%;
 
   // max-width: 100%;
-  // height: auto;
 }
 .greeting-pic__rectangle {
   background-color: $secondary---light-gray;
   width: 410px;
   height: 466px;
   position: absolute;
-  top: 50px;
-  left: 50px;
   // top: 9%;
   // left: 0;
   z-index: -1;
@@ -180,22 +182,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: center;
-  // position: absolute;
-  // right: -50px;
-  // top: 50%;
-  // transform: translateY(-50%);
-
-  margin-bottom: 20px;
 }
 .links-link {
-  // list-style: none;
-  //   padding: 0;
-  //   margin: 0;
-  //   display: flex;
-  //   flex-direction: column;
-  //   gap: 10px;
-
   list-style-type: none;
   margin-bottom: 10px;
 }
@@ -204,25 +192,24 @@
   height: 30px;
 }
 .socials {
+  width: 61px;
+  height: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: 50px;
 }
-.socials__caption {
+.socials-caption {
   writing-mode: vertical-rl;
-  transform: rotate(-90deg);
-  margin: 0;
+  transform: rotate(180deg);
+  margin: 19px;
+  transform-origin: center;
+}
+.socials-caption__text {
   font-family: $font-family;
   font-weight: 400;
   font-size: 28px;
   color: $secondary---hard-green;
-
-  position: absolute;
-  right: -50px;
-  top: 50%;
-  transform-origin: center;
 }
 // <!-- Раздел сайта блок "section-2" - Настя -->
 .section-2 {
@@ -231,6 +218,7 @@
   // flex-wrap: wrap;
   padding: 20px;
   margin: 40px;
+  margin-bottom: 100px;
 }
 .about-us-pic {
   position: relative;
@@ -287,6 +275,7 @@
   // flex-wrap: wrap;
   padding: 20px;
   margin: 40px;
+  margin-bottom: 50px;
 }
 .promotion-text {
   flex: 1;
@@ -353,7 +342,6 @@
   gap: 20px;
   padding: 20px;
 }
-
 .arrow {
   display: flex;
   align-items: center;
@@ -365,12 +353,10 @@
   cursor: pointer;
   text-decoration: none;
 }
-
 .arrow img {
   width: 20px;
   height: 20px;
 }
-
 .product {
   box-shadow: 0 23px 34px 0 rgba(35, 57, 55, 0.17);
   background: $main---white;
@@ -379,11 +365,9 @@
   text-align: center;
   width: 250px;
 }
-
 .product__title {
   margin-bottom: 10px;
 }
-
 .product__caption {
   font-family: $second-family;
   font-weight: 400;
