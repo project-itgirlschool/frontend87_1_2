@@ -2,22 +2,3 @@
 @import "./scss/header.scss";
 @import "./scss/main.scss";
 @import "./scss/footer.scss";
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body {
-    max-width: 1440px;
-    margin: 0 auto;
-    font-family: $second-family;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 189%;
-    letter-spacing: 0em;
-    color: $secondary---hard-green;
-}
-// /* Позиционирование секций сайта с помощью внутренних отступов */
-.header, .section-1, .section-2, .section-3, .section-4, .section-5 {
-    padding: 16px;
-}

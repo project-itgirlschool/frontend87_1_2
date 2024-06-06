@@ -12,6 +12,21 @@ $secondary---light-green: #F4F7F6; // ввела дополнительный ц
 $main---black: #000;
 $main---white: #fff;
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 189%;
+    letter-spacing: 0em;
+    color: $secondary---hard-green;
+}
 // Стиль кнопок - Настя
 .menu__button, .greeting-area__button, .greeting-area-button-container__button, .promotion-text__button, .product__button {
     display: inline-block; // ?
