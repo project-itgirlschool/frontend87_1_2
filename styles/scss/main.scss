@@ -1,3 +1,82 @@
+//Раздел Header - Раиса
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 40px;
+}
+.logo__pic {
+  height: 37px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+}
+.logo__text {
+  height: 50px;
+  margin-bottom: 20px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+.menu li {
+  margin-left: 20px;
+}
+.menu a {
+  text-decoration: none;
+  font-family: $font-family;
+  color: $main---black;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 50px;
+}
+.menu__button {
+  margin-bottom: 15px;
+}
+//Планшет - 720px
+@media (max-width: 720px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .menu ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .menu a,
+  .menu__button {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+//Телефон - 375px
+
 // Раздел сайта блок "section-1" - Настя
 .section-1 {
   display: flex;
@@ -149,7 +228,7 @@
 .about-us-pic__rectangle {
   background-color: $primary---yellow-pink;
   width: 380px;
-  height: 287px; 
+  height: 287px;
   position: absolute;
   top: 9%;
   left: 0;
@@ -170,7 +249,8 @@
 .about-us-text__title {
   margin-bottom: 10px;
 }
-.about-us-text__caption-1, .about-us-text__caption-2 {
+.about-us-text__caption-1,
+.about-us-text__caption-2 {
   font-family: $second-family;
   font-weight: 400;
   font-size: 19px;
@@ -224,7 +304,7 @@
 .promotion-pic__rectangle {
   background-color: $secondary---light-gray;
   width: 410px;
-  height: 276px; 
+  height: 276px;
   position: absolute;
   top: 9%;
   left: 0;
