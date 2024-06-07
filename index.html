@@ -33,39 +33,41 @@
     <main>
         <!-- Раздел сайта блок "section-1" - Настя (Раиса написала html, Настя откорректировала с учетом БЭМ и адаптива) -->
         <div class="section-1">
-            <section class="section-1-column-1">
-                <div class="greeting-area">
-                    <p class="greeting-area__tagline">Drink coffee, enjoy with Samwayle</p>
-                    <h1 class="greeting-area__name">Coffee Shop</h1>
-                    <button class="greeting-area__button greeting-area__button_order-here">Order here</button>
-                    <div class="greeting-area-button-container">
-                        <button class="greeting-area-button-container__button greeting-area-button-container__button_order-here-arrow">Order here &rarr;</button>
+            <section class="section-1-column-1"> 
+                    <div class="greeting-area"> 
+                        <p class="greeting-area__tagline">Drink coffee, enjoy with Samwayle</p>
+                        <h1 class="greeting-area__name">Coffee Shop</h1>
+                        <button class="greeting-area__button greeting-area__button_order-here">Order here</button>
+                        <div class="greeting-area-button-container">
+                            <button class="greeting-area-button-container__button greeting-area-button-container__button_order-here-arrow">Order here &rarr;</button>
+                        </div>
                     </div>
-                </div>
             </section>
-            <section class="section-1-column-2">
-                <div class="pic-arrow">
-                    <a class="pic-arrow__link" href="#">&#8594;</a>
-                    <!-- <img src="./assets/images/arrow.svg" alt="Arrow"> Картинка заменена на текст-->
-                </div>
-                <div class="greeting-pic">
-                    <div class="greeting-pic__rectangle"></div>
-                    <img src="./assets/images/coffeemill.png"  alt="Coffee mill" class="greeting-pic__image_coffee-mill">
-                </div>
-                <div class="socials">
-                    <div class="links">
-                        <ul class="links__link links__link_twitter">
-                            <a href="/"><img src="./assets/images/logo twit.svg" alt="Twitter"></a>
-                        </ul>
-                        <ul class="links__link links__link_insta">
-                            <a href="/"><img src="./assets/images/logo inst.svg" alt="Instagram"></a>
-                        </ul>
-                        <ul class="links__link links__link_fb">
-                            <a href="/"><img src="./assets/images/logo fb.svg" alt="Facebook"></a>
-                        </ul>
+            <section class="section-1-column-2"> 
+                <div class="nested-container">
+                    <div class="pic-arrow">
+                        <a class="pic-arrow__link" href="#">&#8594;</a>
+                        <!-- <img src="./assets/images/arrow.svg" alt="Arrow"> Картинка заменена на текст-->
                     </div>
-                    <div class="socials-caption">
-                        <p class="socials-caption__text">Follow us</p>
+                    <div class="greeting-pic">
+                        <div class="greeting-pic__rectangle"></div>
+                        <img src="./assets/images/coffeemill.png"  alt="Coffee mill" class="greeting-pic__image_coffee-mill">
+                    </div>
+                    <div class="socials">
+                        <div class="links">
+                            <ul class="links__link links__link_twitter">
+                                <a href="/"><img src="./assets/images/logo twit.svg" alt="Twitter"></a>
+                            </ul>
+                            <ul class="links__link links__link_insta">
+                                <a href="/"><img src="./assets/images/logo inst.svg" alt="Instagram"></a>
+                            </ul>
+                            <ul class="links__link links__link_fb">
+                                <a href="/"><img src="./assets/images/logo fb.svg" alt="Facebook"></a>
+                            </ul>
+                        </div>
+                        <div class="socials-caption">
+                            <p class="socials-caption__text">Follow us</p>
+                        </div>
                     </div>
                 </div>
             </section>

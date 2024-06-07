@@ -32,6 +32,26 @@ body {
   text-decoration: none;
 }
 
+.greeting-area__button,
+.greeting-area-button-container__button,
+.promotion-text__button,
+.product__button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2d635e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
 .menu__button .greeting-area__button .greeting-area-button-container__button .promotion-text__button .product__button:hover {
   background-color: #444a4a;
 }
@@ -150,22 +170,20 @@ h4 {
   margin-bottom: 120px;
 }
 
-.section-1-column-1 {
+.section-1-column-1, .section-1-column-2 {
   flex: 1;
   display: flex;
+}
+
+.section-1-column-1 {
   justify-content: flex-start;
   align-items: center;
   width: 45%;
 }
 
 .section-1-column-2 {
-  flex: 1;
-  display: flex;
   position: relative;
-  justify-content: flex-end;
-  align-items: flex-end;
   width: 55%;
-  max-width: 601px;
 }
 
 .greeting-area {
@@ -194,14 +212,26 @@ h4 {
   display: none;
 }
 
+.nested-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 601px;
+  max-height: 513px;
+}
+
+.pic-arrow, .greeting-pic, .socials {
+  flex: 1;
+  position: relative;
+}
+
 .pic-arrow {
   width: 159px;
   height: 157px;
   background-color: #e3ebe7;
   opacity: 0.4;
   display: flex;
-  position: relative;
-  bottom: 45px;
+  top: 309px;
 }
 
 .pic-arrow__link {
@@ -217,23 +247,21 @@ h4 {
 }
 
 .greeting-pic {
-  position: relative;
   min-width: 410px;
   min-height: 513px;
 }
 
 .greeting-pic__image_coffee-mill {
   width: 100%;
-  max-width: 373px;
-  height: auto;
+  max-width: 344px;
+  max-height: 373px;
   position: relative;
-  left: 7%;
-  top: 40%;
+  left: 6%;
+  top: 25%;
 }
 
 .greeting-pic__rectangle {
   background-color: #e3ebe7;
-  width: 100%;
   min-width: 380px;
   height: 466px;
   min-height: 269px;
@@ -242,13 +270,12 @@ h4 {
 }
 
 .socials {
-  min-width: 64px;
+  max-width: 64px;
   min-height: 247px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  position: relative;
-  bottom: 45px;
+  top: 215px;
 }
 
 .socials-caption {
@@ -282,6 +309,8 @@ h4 {
 
 .section-2 {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   padding: 20px;
   margin-left: 120px;
@@ -290,6 +319,9 @@ h4 {
 }
 
 .about-us-pic {
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
   position: relative;
   width: 30%;
   min-width: 392px;
@@ -327,7 +359,9 @@ h4 {
 }
 
 .about-us-text {
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
   width: 70%;
   margin-left: 40px;
 }
@@ -350,6 +384,8 @@ h4 {
 .section-3 {
   display: flex;
   align-items: center;
+  flex-direction: row;
+  justify-content: center;
   padding: 20px;
   margin-left: 120px;
   margin-right: 152px;
@@ -357,7 +393,9 @@ h4 {
 }
 
 .promotion-text {
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
   width: 70%;
   margin-right: 40px;
 }
@@ -377,6 +415,9 @@ h4 {
 }
 
 .promotion-pic {
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
   position: relative;
   width: 30%;
   min-width: 428px;
@@ -459,9 +500,16 @@ h4 {
   margin-bottom: 20px;
 }
 
-@media (max-width: 420px) {
-  .section-1 {
-    margin: 20px;
+@media screen and (min-width: 720px) and (max-width: 1170px) {
+  .body {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-size: 58px;
+  }
+  .section-1, .section-2, .section-3 {
+    margin: 10px;
   }
   .greeting-area__tagline {
     margin-bottom: 20px;
@@ -470,12 +518,25 @@ h4 {
   .greeting-area__name {
     margin-bottom: 20px;
   }
+  .pic-arrow {
+    display: none;
+  }
+  .nested-container {
+    justify-content: space-between;
+    max-width: 400px;
+    max-height: auto;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .socials {
+    top: 480px;
+  }
   .socials-caption__text {
     font-size: 25px;
   }
   .section-2 {
     margin-left: 20px;
-    margin-right: 52px;
+    margin-right: 0;
     margin-bottom: 70px;
   }
   .about-us-text {
@@ -486,32 +547,42 @@ h4 {
   }
   .section-3 {
     margin-left: 20px;
-    margin-right: 52px;
+    margin-right: 0;
     margin-bottom: 20px;
   }
   .promotion-text {
     margin-right: 20px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   .body {
-    display: flex;
+    margin: 0;
+    padding: 0;
   }
-  .body, .section-1, .section-2, .section-3, .section-4 {
+  .section-1, .section-2 {
+    width: 100%;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+  }
+  .section-3 {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
+  }
+  .section-1-column-2 {
+    display: none;
+  }
+  .section-1-column-1 {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
   }
   .about-us-pic__heading, .promotion-pic__heading, .map__heading, .greeting-area__button, .promotion-text__button_order-now, .section-1-column-2 {
     display: none;
   }
-  .section-1 {
-    flex-direction: column;
-    align-items: center;
-  }
-  .section-1-column-1 {
-    width: 100%;
-    flex: none;
-    padding: 0;
+  .greeting-area {
     text-align: center;
   }
   .greeting-area__tagline {
@@ -523,13 +594,51 @@ h4 {
     font-size: 54px;
     text-align: center;
   }
+  h2, h3 {
+    text-align: center;
+  }
   .greeting-area__name {
-    font-size: 36px;
+    font-size: 50px;
   }
   .greeting-area-button-container__button_order-here-arrow {
     display: block;
     font-size: 16px;
     font-weight: 400;
+  }
+  .section-2, .section-3 {
+    padding: 0;
+  }
+  .about-us-pic {
+    max-width: 380px;
+    max-height: 277px;
+  }
+  .about-us-pic__image_cup {
+    width: 100%;
+    display: block;
+    stroke-width: 4px;
+    stroke: #444a4a;
+    bottom: 3%;
+    left: 3%;
+  }
+  .about-us-pic__rectangle {
+    width: 390px;
+    height: 248px;
+    position: absolute;
+  }
+  .about-us-text, .promotion-text {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+  .promotion-pic__rectangle {
+    width: 375px;
+    height: 320px;
+    position: absolute;
+  }
+  .promotion-pic__image_big-cup {
+    width: 100%;
+    display: block;
+    left: 23%;
   }
 }
 
