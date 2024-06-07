@@ -15,7 +15,48 @@ body {
   color: #444a4a;
 }
 
-.menu__button, .greeting-area__button, .greeting-area-button-container__button, .promotion-text__button, .product__button {
+.menu__button {
+  display: inline-block;
+  padding: 15px 33px;
+  background-color: #2d635e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 23px 34px 0 rgba(25, 47, 45, 0.15);
+}
+
+.greeting-area__button,
+.greeting-area-button-container__button,
+.promotion-text__button,
+.product__button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2d635e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.greeting-area__button,
+.greeting-area-button-container__button,
+.promotion-text__button,
+.product__button {
   display: inline-block;
   padding: 10px 20px;
   background-color: #2d635e;
@@ -413,6 +454,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: #f4f7f6;
   gap: 20px;
   padding: 20px;
@@ -481,7 +523,9 @@ h4 {
   .about-us-text {
     margin-left: 20px;
   }
-  .about-us-text__caption-1, .about-us-text__caption-2, .promotion-text__caption {
+  .about-us-text__caption-1,
+  .about-us-text__caption-2,
+  .promotion-text__caption {
     margin-bottom: 10px;
   }
   .section-3 {
@@ -492,16 +536,28 @@ h4 {
   .promotion-text {
     margin-right: 20px;
   }
+  .arrow {
+    display: none;
+  }
 }
 @media (max-width: 375px) {
   .body {
     display: flex;
   }
-  .body, .section-1, .section-2, .section-3, .section-4 {
+  .body,
+  .section-1,
+  .section-2,
+  .section-3,
+  .section-4 {
     flex-direction: column;
     align-items: center;
   }
-  .about-us-pic__heading, .promotion-pic__heading, .map__heading, .greeting-area__button, .promotion-text__button_order-now, .section-1-column-2 {
+  .about-us-pic__heading,
+  .promotion-pic__heading,
+  .map__heading,
+  .greeting-area__button,
+  .promotion-text__button_order-now,
+  .section-1-column-2 {
     display: none;
   }
   .section-1 {

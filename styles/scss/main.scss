@@ -1,87 +1,8 @@
-//Раздел Header - Раиса
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-.logo {
-  display: flex;
-  align-items: center;
-  margin: 40px;
-}
-.logo__pic {
-  height: 37px;
-  margin-right: 10px;
-  margin-bottom: 25px;
-}
-.logo__text {
-  height: 50px;
-  margin-bottom: 20px;
-}
-.menu {
-  display: flex;
-  align-items: center;
-  margin-right: 40px;
-}
-.menu ul {
-  list-style: none;
-  display: flex;
-}
-.menu li {
-  margin-left: 20px;
-}
-.menu a {
-  text-decoration: none;
-  font-family: $font-family;
-  color: $main---black;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 50px;
-}
-.menu__button {
-  margin-bottom: 15px;
-}
-//Планшет - 720px
-@media (max-width: 720px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
-
-  .menu {
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
-
-  .menu ul {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu li {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  .menu a,
-  .menu__button {
-    width: 100%;
-    text-align: left;
-  }
-}
-
-//Телефон - 375px
-
 // Раздел сайта блок "section-1" - Настя
 .section-1 {
   display: flex;
   justify-content: space-between;
-  margin: 120px;  // при адаптиве в мобильной версии должны быть 0
+  margin: 120px; // при адаптиве в мобильной версии должны быть 0
   margin-bottom: 120px;
 }
 .section-1-column-1 {
@@ -99,7 +20,7 @@
   justify-content: flex-end;
   align-items: flex-end; // ?
   width: 55%;
-  max-width: 601px;   // нужно ли?
+  max-width: 601px; // нужно ли?
 }
 .greeting-area {
   text-align: left;
@@ -159,7 +80,7 @@
   background-color: $secondary---light-gray;
   width: 100%;
   min-width: 380px;
-  height: 466px; 
+  height: 466px;
   min-height: 269px;
   position: absolute;
   z-index: -1;
@@ -239,7 +160,7 @@
   min-width: 36px;
   right: 70%;
   top: 14%;
-  transform: rotate(270deg) translateY(-50%);    
+  transform: rotate(270deg) translateY(-50%);
 }
 .about-us-text {
   flex: 1;
@@ -314,7 +235,7 @@
   position: absolute;
   left: 85%;
   top: 13%;
-  transform: rotate(270deg) translateY(-50%);    
+  transform: rotate(270deg) translateY(-50%);
 }
 
 // <!-- Раздел сайта блок "section-4" - Раиса (откорректировала Настя с учетом ввода переменных шрифтов и цветов) -->
@@ -322,6 +243,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: $secondary---light-green;
   gap: 20px;
   padding: 20px;
@@ -367,7 +289,7 @@
 
 @media (max-width: 420px) {
   .section-1 {
-      margin: 20px;
+    margin: 20px;
   }
   .greeting-area__tagline {
     margin-bottom: 20px;
@@ -387,7 +309,9 @@
   .about-us-text {
     margin-left: 20px;
   }
-  .about-us-text__caption-1, .about-us-text__caption-2, .promotion-text__caption {
+  .about-us-text__caption-1,
+  .about-us-text__caption-2,
+  .promotion-text__caption {
     margin-bottom: 10px;
   }
   .section-3 {
@@ -398,6 +322,9 @@
   .promotion-text {
     margin-right: 20px;
   }
+  .arrow {
+    display: none;
+  }
 }
 
 // Медиа-запрос для экранов мобильных телефонов шириной 375px
@@ -405,12 +332,21 @@
   .body {
     display: flex;
   }
-  .body, .section-1, .section-2, .section-3, .section-4 {
+  .body,
+  .section-1,
+  .section-2,
+  .section-3,
+  .section-4 {
     flex-direction: column;
     align-items: center;
   }
-  
-  .about-us-pic__heading, .promotion-pic__heading, .map__heading,  .greeting-area__button, .promotion-text__button_order-now, .section-1-column-2 {
+
+  .about-us-pic__heading,
+  .promotion-pic__heading,
+  .map__heading,
+  .greeting-area__button,
+  .promotion-text__button_order-now,
+  .section-1-column-2 {
     display: none;
   }
   .section-1 {
@@ -494,8 +430,7 @@
 //   }
 //   .about-us-pic__rectangle {
 //     width: 380px;
-//     height: 248px; 
+//     height: 248px;
 //     position: absolute;
 //   }
 // }
-

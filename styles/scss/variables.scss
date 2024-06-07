@@ -13,37 +13,60 @@ $main---black: #000;
 $main---white: #fff;
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-    max-width: 1440px;
-    margin: 0 auto;
-    font-family: $second-family;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 189%;
-    letter-spacing: 0em;
-    color: $secondary---hard-green;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 189%;
+  letter-spacing: 0em;
+  color: $secondary---hard-green;
 }
+
+// Стиль кнопок - Настя - кнопка меню отличается шрифтом, поэтому вынесла ее отдельно - Раиса
+.menu__button {
+  display: inline-block; // ?
+  padding: 15px 33px;
+  background-color: $primary---green;
+  color: $main---white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  color: $main---white;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 23px 34px 0 rgba(25, 47, 45, 0.15);
+}
+
 // Стиль кнопок - Настя
-.menu__button, .greeting-area__button, .greeting-area-button-container__button, .promotion-text__button, .product__button {
-    display: inline-block; // ?
-    padding: 10px 20px;
-    background-color: $primary---green;
-    color: $main---white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: $font3;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    color: $main---white;
-    text-align: center;
-    text-decoration: none;
-// transition: background-color 0.3s ease; // ?
+.greeting-area__button,
+.greeting-area-button-container__button,
+.promotion-text__button,
+.product__button {
+  display: inline-block; // ?
+  padding: 10px 20px;
+  background-color: $primary---green;
+  color: $main---white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: $font3;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: $main---white;
+  text-align: center;
+  text-decoration: none;
+  // transition: background-color 0.3s ease; // ?
 }
 .greeting-area__button,
 .greeting-area-button-container__button,
