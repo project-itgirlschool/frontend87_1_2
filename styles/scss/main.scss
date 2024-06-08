@@ -5,7 +5,8 @@
   margin: 120px; // при адаптиве в мобильной версии должны быть 0
   margin-bottom: 120px;
 }
-.section-1-column-1, .section-1-column-2 {
+.section-1-column-1,
+.section-1-column-2 {
   flex: 1;
   display: flex;
 }
@@ -39,14 +40,16 @@
 .greeting-area-button-container__button_order-here-arrow {
   display: none;
 }
-.nested-container { 
+.nested-container {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: space-between;
-  max-width: 601px;   // нужно ли?
+  max-width: 601px; // нужно ли?
   max-height: 513px;
 }
-.pic-arrow, .greeting-pic, .socials {
+.pic-arrow,
+.greeting-pic,
+.socials {
   flex: 1;
   position: relative;
 }
@@ -90,7 +93,7 @@
   z-index: -1;
 }
 .socials {
-  max-width:  64px;
+  max-width: 64px;
   min-height: 247px;
   display: flex;
   flex-direction: column;
@@ -125,8 +128,8 @@
 // <!-- Раздел сайта блок "section-2" - Настя -->
 .section-2 {
   display: flex;
-  flex-direction: row;  
-  justify-content: center;  
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   // flex-wrap: wrap;
   padding: 20px;
@@ -135,9 +138,9 @@
   margin-bottom: 100px;
 }
 .about-us-pic {
-  flex-grow: 1; 
-  flex-shrink: 1; 
-  align-self: center; 
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
   position: relative;
   width: 30%;
   min-width: 392px;
@@ -171,9 +174,9 @@
   transform: rotate(270deg) translateY(-50%);
 }
 .about-us-text {
-  flex-grow: 1; 
-  flex-shrink: 1; 
-  align-self: center; 
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
   width: 70%;
   margin-left: 40px;
 }
@@ -195,8 +198,8 @@
 .section-3 {
   display: flex;
   align-items: center;
-  flex-direction: row; 
-  justify-content: center; 
+  flex-direction: row;
+  justify-content: center;
   // flex-wrap: wrap;
   padding: 20px;
   margin-left: 120px;
@@ -205,8 +208,8 @@
 }
 .promotion-text {
   flex-grow: 1;
-  flex-shrink: 1; 
-  align-self: center; 
+  flex-shrink: 1;
+  align-self: center;
   width: 70%;
   margin-right: 40px;
 }
@@ -223,9 +226,9 @@
   margin-bottom: 20px;
 }
 .promotion-pic {
-  flex-grow: 1; 
+  flex-grow: 1;
   flex-shrink: 1;
-  align-self: center; 
+  align-self: center;
   position: relative;
   width: 30%;
   min-width: 428px;
@@ -312,7 +315,9 @@
   h1 {
     font-size: 58px;
   }
-  .section-1, .section-2, .section-3 {
+  .section-1,
+  .section-2,
+  .section-3 {
     margin: 10px;
   }
   .greeting-area__tagline {
@@ -327,19 +332,20 @@
   }
   .nested-container {
     justify-content: space-between;
-    max-width: 400px;   // нужно ли?
+    max-width: 400px; // нужно ли?
     max-height: auto;
     width: 100%;
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
   }
-  .socials {    
-    top: 480px;}
+  .socials {
+    top: 480px;
+  }
   .socials-caption__text {
     font-size: 25px;
   }
   .section-2 {
-    margin-left: 20px; 
-    margin-right: 0; 
+    margin-left: 20px;
+    margin-right: 0;
     margin-bottom: 70px;
   }
   .about-us-text {
@@ -352,7 +358,7 @@
   }
   .section-3 {
     margin-left: 20px;
-    margin-right: 0; 
+    margin-right: 0;
     margin-bottom: 20px;
   }
   .promotion-text {
@@ -369,7 +375,8 @@
     margin: 0;
     padding: 0;
   }
-  .section-1, .section-2 {
+  .section-1,
+  .section-2 {
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -389,7 +396,12 @@
     padding: 40px;
     text-align: center;
   }
-  .about-us-pic__heading, .promotion-pic__heading, .map__heading,  .greeting-area__button, .promotion-text__button_order-now, .section-1-column-2 {
+  .about-us-pic__heading,
+  .promotion-pic__heading,
+  .map__heading,
+  .greeting-area__button,
+  .promotion-text__button_order-now,
+  .section-1-column-2 {
     display: none;
   }
   .greeting-area {
@@ -404,7 +416,8 @@
     font-size: 54px;
     text-align: center;
   }
-  h2, h3 {
+  h2,
+  h3 {
     text-align: center;
   }
   .greeting-area__name {
@@ -415,9 +428,10 @@
     font-size: 16px;
     font-weight: 400;
   }
-  .section-2, .section-3 {
+  .section-2,
+  .section-3 {
     padding: 0;
-  } 
+  }
   .about-us-pic {
     max-width: 380px;
     max-height: 277px;
@@ -432,10 +446,11 @@
   }
   .about-us-pic__rectangle {
     width: 390px;
-    height: 248px; 
+    height: 248px;
     position: absolute;
   }
-  .about-us-text, .promotion-text {
+  .about-us-text,
+  .promotion-text {
     width: 100%;
     margin: 0;
     padding: 20px;
@@ -450,8 +465,7 @@
     display: block;
     left: 23%;
   }
+  .arrow {
+    display: none;
+  }
 }
-
-
-
-
