@@ -287,7 +287,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   box-shadow: 0 23px 34px 0 rgba(35, 57, 55, 0.17);
   background: $main---white;
   border-radius: 20px;
@@ -296,9 +295,6 @@
   max-width: 340px;
   min-height: 458px; 
   max-height: 458px;
-
-  // min-height: 250px;
-
   font-family: $second-family;
   font-weight: 400;
   font-size: 19px;
@@ -322,5 +318,8 @@
   text-align: center;
   color: $secondary---hard-green;
   margin-bottom: 40px; // Настя - откорректировала с учетом макетa figma
+}
+.product__title_espresso, .product__caption_espresso {
+  margin-bottom: 60px;
 }
 

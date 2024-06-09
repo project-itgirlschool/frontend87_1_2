@@ -69,26 +69,6 @@ body {
   text-decoration: none;
   // transition: background-color 0.3s ease; // ?
 }
-.greeting-area__button,
-.greeting-area-button-container__button,
-.promotion-text__button,
-.product__button {
-  display: inline-block; // ?
-  padding: 10px 20px;
-  background-color: $primary---green;
-  color: $main---white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: $font3;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
-  color: $main---white;
-  text-align: center;
-  text-decoration: none;
-  // transition: background-color 0.3s ease; // ?
-}
 .menu__button
   .greeting-area__button
   .greeting-area-button-container__button
