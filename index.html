@@ -13,67 +13,118 @@
 </head>
 <!-- Базовая структура файла index.html - Раиса -->
 <body>
-    <!-- Раздел сайта блок "section-1" - Тамара (Раиса написала html, Настя откорректировала с учетом БЭМ и адаптива) -->
+    <!-- Раздел сайта блок "header" - Раиса (Раиса написала html, Настя откорректировала с учетом БЭМ и адаптива) -->
     <header class="header">
-            <div class="logo">
-                <img class="logo__pic" src="./assets/images/logo.svg" alt="Logo">
-                <img class="logo__text" src="./assets/images/logo text.svg" alt="Logo-text">
-            </div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#" class="menu__link menu__link_about_us">About us</a></li>
-                    <li><a href="#" class="menu__link menu__link_promotion">Promotion</a></li>
-                    <li><a href="#" class="menu__link menu__link_shop">Shop</a></li>
-                    <li><a href="#" class="menu__link menu__link_contacts">Contacts</a></li>
-                    <li><button class="menu__button menu__button_contact-us">Contact Us</button></li>
-                </ul>
-            </nav>
+        <div class="menu-toggle" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo">
+            <img class="logo__pic" src="./assets/images/logo.svg" alt="Logo">
+            <img class="logo__text" src="./assets/images/logo text.svg" alt="Logo-text">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" class="menu__link menu__link_about_us">About us</a></li>
+                <li><a href="#" class="menu__link menu__link_promotion">Promotion</a></li>
+                <li><a href="#" class="menu__link menu__link_shop">Shop</a></li>
+                <li><a href="#" class="menu__link menu__link_contacts">Contacts</a></li>
+                <li><button class="menu__button menu__button_contact-us">Contact Us</button></li>
+            </ul>
+        </nav>
+        <nav class="mobile-menu">
+            <div class="mobile-menu__close">&times;</div>
+            <ul>
+                <li><a href="#" class="menu__link menu__link_home">Home</a></li>
+                <li><a href="#" class="menu__link menu__link_about_us">About us</a></li>
+                <li><a href="#" class="menu__link menu__link_promotion">Promotion</a></li>
+                <li><a href="#" class="menu__link menu__link_shop">Shop</a></li>
+                <li><a href="#" class="menu__link menu__link_contacts">Contacts</a></li>
+                <li class="socials-in-menu"> <!-- Блок откорректирован Настей с изменением названий классов, чтобы не было путаницы с блоком в section-1 -->
+                    <div class="links-in-menu">
+                        <ul class="links-in-menu__link links-in-menu__link_twitter">
+                            <a href="/"><img src="./assets/images/logo twit.svg" alt="Twitter" /></a>
+                        </ul>
+                        <ul class="links-in-menu__link links-in-menu__link_insta">
+                            <a href="/"><img src="./assets/images/logo inst.svg" alt="Instagram" /></a>
+                        </ul>
+                        <ul class="links-in-menu__link links-in-menu__link_fb">
+                            <a href="/"><img src="./assets/images/logo fb.svg" alt="Facebook" /></a>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="mobile-menu__bottom-strip"></div> <!-- // Настя - добавила с учетом макета в figma -->
+        </nav>
     </header>
     <!-- Основной контент сайта -->
     <main>
+        <!-- Раздел сайта блок "section-1" - Настя (Раиса написала html, Настя откорректировала с учетом БЭМ и адаптива) -->
         <div class="section-1">
-            <section class="section-1-column-1">
-                <div class="greeting-area">
-                    <p class="greeting-area__tagline">Drink coffee, enjoy with Samwayle</p>
-                    <h1 class="greeting-area__name">Coffee Shop</h1>
-                    <button class="greeting-area__button greeting-area__button_order-here">Order here</button>
-                </div>
-            </section>
-            <section class="section-1-column-2">
-                <a class="arrow-link" href="#"><img src="./assets/images/arrow.svg" alt="Arrow"></a>
-                <div class="greeting-pic">
-                    <div class="greeting-pic__rectangle"></div>
-                    <img src="./assets/images/coffeemill.png"  alt="Coffee mill" class="greeting-pic__image_coffee-mill">
-                </div>
-                <div class="socials">
-                    <div class="links">
-                        <ul class="links__link links__link_twitter">
-                            <img src="./assets/images/logo twit.svg" alt="Twitter">
-                        </ul>
-                        <ul class="links__link links__link_insta">
-                            <img src="./assets/images/logo inst.svg" alt="Instagram">
-                        </ul>
-                        <ul class="links__link links__link_fb">
-                            <img src="./assets/images/logo fb.svg" alt="Facebook">
-                        </ul>
+            <section class="section-1-column-1"> 
+                    <div class="greeting-area"> 
+                        <p class="greeting-area__tagline">Drink coffee, enjoy with Samwayle</p>
+                        <h1 class="greeting-area__name">Coffee Shop</h1>
+                        <button class="greeting-area__button greeting-area__button_order-here">Order here</button>
+                        <div class="greeting-area-button-container">
+                            <button class="greeting-area-button-container__button greeting-area-button-container__button_order-here-arrow">Order here &rarr;</button>
+                        </div>
                     </div>
-                    <div class="socials__caption">Follow us</div>
+            </section>
+            <section class="section-1-column-2"> 
+                <div class="nested-container">
+                    <div class="pic-arrow">
+                        <a class="pic-arrow__link" href="#">&#8594;</a>
+                        <!-- <img src="./assets/images/arrow.svg" alt="Arrow"> Картинка заменена на текст-->
+                    </div>
+                    <div class="greeting-pic">
+                        <div class="greeting-pic__rectangle"></div>
+                        <img src="./assets/images/coffeemill.png"  alt="Coffee mill" class="greeting-pic__image_coffee-mill">
+                    </div>
+                    <div class="socials">
+                        <div class="links">
+                            <ul class="links__link links__link_twitter">
+                                <a href="/"><img src="./assets/images/logo twit.svg" alt="Twitter"></a>
+                            </ul>
+                            <ul class="links__link links__link_insta">
+                                <a href="/"><img src="./assets/images/logo inst.svg" alt="Instagram"></a>
+                            </ul>
+                            <ul class="links__link links__link_fb">
+                                <a href="/"><img src="./assets/images/logo fb.svg" alt="Facebook"></a>
+                            </ul>
+                        </div>
+                        <div class="socials-caption">
+                            <p class="socials-caption__text">Follow us</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
-        <!-- Раздел сайта блок "section-2" - Арина (Раиса написала html, Настя откорректировала с учетом БЭМ и адаптива)-->
+        <!-- Раздел сайта блок "section-2" - Настя (Раиса написала html, Настя откорректировала с учетом БЭМ и адаптива)-->
         <div class="section-2">
+            <!-- Вложенный блок "about-us-pic" -->
             <div class="about-us-pic">
+                <!-- Элемент "rectangle" блока "about-us-pic" -->
                 <div class="about-us-pic__rectangle"></div>
-                <img src="./assets/images/coffee.png" alt="Cup" class="about-us-pic__image_cup">
+                <!-- Элемент "svg" блока "about-us-pic" с модификатором "cup" -->
+                <svg class="about-us-pic__image" viewBox="0 0 343 249" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="about-us-pic__image_cup" d="M238.018 189.069C184.461 226.337 123.342 203.666 99.4769 187.672H99.012C98.7021 187.051 97.9892 185.436 97.6173 183.945C97.3649 182.934 95.1005 180.721 92.9445 178.821M238.018 189.069C217.098 202.579 160.565 220.933 101.801 186.274M238.018 189.069C186.321 224.101 125.667 205.84 101.801 192.33V186.274M238.018 189.069L237.554 188.604M101.801 186.274L98.5471 183.479L94.8279 179.287L92.9445 178.821M274.746 183.013L269.632 186.74C267.772 181.895 247.162 185.653 237.089 188.138L237.554 188.604M274.746 183.013C279.705 183.79 288.414 186.927 283.579 193.262C277.69 197.92 259.311 208.076 232.905 211.43C209.504 215.467 152.569 221.12 112.029 211.43C75.7668 204.908 20.0713 188.976 87.3894 177.423L90.1788 176.492M274.746 183.013C265.82 180.405 254.91 175.405 250.571 173.231M90.1788 176.492C90.9261 177.091 91.9231 177.921 92.9445 178.821M90.1788 176.492L82.5019 165.777M77.1615 158.324C35.0102 162.361 -34.4156 179.752 25.0922 217.02C59.3402 235.964 158.985 265.375 283.579 231.461C330.844 214.536 393.018 176.119 263.588 157.858M77.1615 158.324C49.2672 111.366 48.1825 55.8377 51.1269 33.943M77.1615 158.324L82.5019 165.777M263.588 157.858L275.211 132.236M263.588 157.858L257.08 165.544M237.554 188.604L250.571 173.231M250.571 173.231L257.08 165.544M269.632 183.479L251.501 176.026L244.527 184.411L259.404 181.616L261.264 182.548H262.658L252.431 178.821L250.571 179.752L249.176 181.616L252.431 181.15M275.211 132.236C302.33 129.286 352.943 113.416 338.438 73.5399C334.409 64.3782 319.656 48.5706 292.877 58.6328M275.211 132.236C276.633 129.786 277.986 126.781 279.265 123.385M292.877 58.6328C292.563 61.4191 292.143 64.7377 291.623 68.4156M292.877 58.6328L291.623 68.4156M279.265 123.385C279.785 122.003 280.294 120.556 280.79 119.056M279.265 123.385C280.429 123.177 281.836 122.899 283.366 122.561M280.79 119.056L302.175 115.932C302.485 114.534 302.547 112.578 300.316 115.932C298.511 118.644 289.838 121.134 283.366 122.561M280.79 119.056C281.126 118.038 281.456 116.995 281.781 115.932M281.781 115.932L283.366 122.561M281.781 115.932C285.617 103.361 288.63 87.8114 290.649 74.9374M281.781 115.932C289.483 115.665 301.592 113.416 310.544 107.353M290.649 74.9374C314.53 69.7199 321.611 80.5275 322.166 86.5835C322.166 92.1845 320.477 96.7917 317.733 100.559M290.649 74.9374C291.005 72.6702 291.33 70.4859 291.623 68.4156M291.623 68.4156C296.535 67.4839 306.638 65.9 307.754 67.018M291.623 68.4156V33.943M317.733 100.559C320.529 103.509 323.214 108.851 311.591 106.615M317.733 100.559C316.964 101.614 316.113 102.604 315.193 103.531M311.591 106.615C312.875 105.674 314.084 104.648 315.193 103.531M311.591 106.615C311.247 106.867 310.898 107.113 310.544 107.353M315.193 103.531C317.362 105.516 319.47 109.061 310.544 107.353M291.623 33.943C267.188 61.521 199.215 65.6205 168.283 64.2229C141.628 65.7758 80.8808 61.8937 51.1269 33.943M291.623 33.943C292.09 31.1408 291.211 27.7153 288.214 24.1603M51.1269 33.943C49.9809 31.2931 50.6 27.8293 54.4516 24.1603M60.425 81.4592C68.6383 116.398 93.2472 186.74 125.976 188.604M288.214 24.1603C278.59 12.7436 247.127 -0.00791271 168.283 2.26557C94.2952 4.39902 64.1422 14.9291 54.4516 24.1603M288.214 24.1603C286.843 25.9448 284.808 28.0065 282.069 30.2163M54.4516 24.1603C55.546 26.1268 56.921 27.9885 58.5421 29.7504M58.5421 29.7504C64.9036 24.7814 80.2299 15.3092 90.6438 17.1726M58.5421 29.7504C65.0721 36.8476 75.5949 42.3248 87.8543 46.5032M136.204 10.1849C143.643 9.25324 159.822 7.5762 165.028 8.32155M175.721 8.32155C185.019 8.16627 203.801 8.32155 204.545 10.1849M87.8543 46.5032C114.079 55.4415 148.251 58.4367 168.283 58.6328C207.119 58.6328 235.589 52.4304 255.22 44.8589M87.8543 46.5032C108.93 38.1029 171.909 26.0135 255.22 44.8589M255.22 44.8589C267.508 40.1193 276.333 34.8433 282.069 30.2163M257.08 165.544C269.942 165.622 296.596 167.081 300.316 172.299M82.5019 165.777C66.9296 166.088 34.9482 168.665 31.6009 176.492M53.4514 200.716C65.5389 208.945 98.6401 225.033 134.345 223.542M214.308 221.213C230.425 219.349 264.518 214.225 271.956 208.635M248.246 16.2409C258.242 18.1043 279.001 23.5081 282.069 30.2163M278 60.4962C278.155 78.8194 272.049 126.273 246.387 169.504M232.905 183.479L240.343 175.56M95.7577 183.013L80.4158 187.206C79.9509 187.827 79.3931 188.976 80.8807 188.604C82.3684 188.231 92.0385 185.964 96.6875 184.877L95.7577 183.013Z" stroke="#444A4A" stroke-width="4" />
+                </svg>
+                <!-- <img src="./assets/images/cup.svg" alt="Cup" class="about-us-pic__image_cup"> Настя: переподключила картинку, так как цвет можно поменять только для файла .svg -->
+                <!-- Элемент "heading" блока "about-us-pic" -->
                 <div class="about-us-pic__heading">
-                    <h4>About us</h4>
+                    <h4 class="about-us-pic__heading_text">About us</h4>
                 </div>
             </div>
+            <!-- Вложенный блок "about-us-text" -->
             <div class="about-us-text">
+                <!-- Элемент "title" блока "about-us-text" -->
                 <h2 class="about-us-text__title">Coffee Shop Samwayle</h2>
-                <p class="about-us-text__caption_1">Only one moment - when the barista reaches out over the bar to transfer the cup to the outstretched hand of the buyer. But this is exactly the moment when a connection arises between us and our guests.</p>
-                <p class="about-us-text__caption_2">And we strive to do our best to maintain this connection - starting with our commitment to selecting the highest quality coffee in the world and ending with how we interact with guests and organizations to fulfill our obligations.</p>
+                <!-- Элемент "caption-1" блока "about-us-text" -->
+                <p class="about-us-text__caption-1">Only one moment - when the barista reaches out over the bar to transfer the cup to the outstretched hand of the buyer. But this is exactly the moment when a connection arises between us and our guests.</p>
+                <!-- Элемент "caption-2" блока "about-us-text" -->
+                <p class="about-us-text__caption-2">And we strive to do our best to maintain this connection - starting with our commitment to selecting the highest quality coffee in the world and ending with how we interact with guests and organizations to fulfill our obligations.</p>
             </div>
         </div>
         <!-- Раздел сайта блок "section-3" - Настя -->
@@ -137,9 +188,23 @@
                 <p class="addresses__address-3">94-54 Corona Ave., Elmhurst</p>
                 <p class="addresses__address-4">5627 Van Doren St, Queens</p>
                 <button class="addresses__button">See more address</button>
+            </div>
             <div class="copyright">
                 <p class="copyright">2020 &copy; - Samwyle bandtitos</p>
             </div>
     </footer>
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            mobileMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+        document.querySelector('.mobile-menu__close').addEventListener('click', function() {
+            toggleMobileMenu();
+        });
+    </script>
+    
+    <script src="index.js"></script>
 </body>
 </html>

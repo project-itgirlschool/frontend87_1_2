@@ -1,0 +1,125 @@
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*flex-direction: column;*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*background-color: blue ;*/
+  margin-left: 32px;
+  margin-right: 278px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.map {
+  width: 50%;
+}
+
+.map__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 351px;
+  width: 646px;
+  margin-left: 250px;
+  padding-right: 40px;
+}
+
+.stripe {
+  /*background-color: yellow;*/
+  padding-left: 150px;
+  /*padding: 30px;*/
+  margin: 60px;
+  -webkit-box-flex: 1fr;
+      -ms-flex-positive: 1fr;
+          flex-grow: 1fr;
+  /*width: 176px;*/
+}
+
+.addresses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*background-color: yellowgreen;*/
+  /*flex-grow: 1fr;*/
+  width: 300px;
+  height: 258px;
+  /*margin-left: 942px;
+  margin-top: 35px;*/
+}
+
+.addresses__title {
+  margin-top: 15px;
+  padding: 0.5px;
+  width: 300px;
+}
+
+.addresses__address-1 {
+  padding: 0.5px;
+  width: 300px;
+}
+
+.addresses__address-2 {
+  padding: 0.5px;
+  width: 300px;
+}
+
+.addresses__address-3 {
+  padding: 0.5px;
+  width: 300px;
+}
+
+.addresses__address-4 {
+  padding: 0.5px;
+  width: 300px;
+}
+
+.copyright {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 39px;
+  /*width: 683px;*/
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 4fr;
+      -ms-flex-positive: 4fr;
+          flex-grow: 4fr;
+  text-align: center;
+  margin-top: auto;
+}
+
+/*background-color: aqua;}
+
+/*.copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 114px;
+    padding-bottom: 0px;
+    padding-left:398px ;
+    padding-right:359px ;
+}*/
+.map__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform-origin: 0%;
+          transform-origin: 0%;
+  -webkit-transform: rotate(180deg) translateY(340px) translateX(-850px);
+          transform: rotate(180deg) translateY(340px) translateX(-850px);
+  /*width: 100px;
+  height: 53px;*/
+}
+/*# sourceMappingURL=footer.css.map */

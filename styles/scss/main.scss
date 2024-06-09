@@ -1,18 +1,214 @@
-// <!-- Раздел сайта блок "section-2" - Арина -->
+// Раздел сайта блок "section-1" - Настя
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 120px; 
+  margin-bottom: 120px;
+}
+.section-1-column-1, .section-1-column-2 {
+  flex: 1;
+  display: flex;
+}
+.section-1-column-1 {
+  justify-content: flex-start;
+  align-items: center;
+  width: 45%;
+}
+.section-1-column-2 {
+  position: relative;
+  width: 55%;
+}
+.greeting-area {
+  text-align: left;
+}
+.greeting-area__tagline {
+  margin-bottom: 40px;
+  font-family: $third-family;
+  font-weight: 400;
+  font-size: 28px;
+  color: $secondary---hard-green;
+}
+.greeting-area__name {
+  margin-bottom: 40px;
+}
+.greeting-area-button-container__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.greeting-area-button-container__button_order-here-arrow {
+  display: none;
+}
+.nested-container { 
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  max-width: 601px;   // нужно ли?
+  max-height: 513px;
+}
+.pic-arrow, .greeting-pic, .socials {
+  flex: 1;
+  position: relative;
+}
+.pic-arrow {
+  width: 159px;
+  height: 157px;
+  background-color: $secondary---light-gray;
+  opacity: 0.4;
+  display: flex;
+  top: 309px;
+}
+.pic-arrow__link {
+  align-content: space-around;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 40px;
+  color: $secondary---hard-green;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  padding: 50px 60px;
+}
+.greeting-pic {
+  min-width: 410px;
+  min-height: 513px;
+}
+.greeting-pic__image_coffee-mill {
+  width: 100%;
+  max-width: 344px;
+  max-height: 373px;
+  position: relative;
+  left: 6%;
+  top: 25%;
+}
+.greeting-pic__rectangle {
+  background-color: $secondary---light-gray;
+  min-width: 380px;
+  height: 466px;
+  min-height: 269px;
+  position: absolute;
+  z-index: -1;
+}
+.socials {
+  max-width:  64px;
+  min-height: 247px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  top: 215px;
+}
+.socials-caption {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+.socials-caption__text {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 28px;
+  color: $secondary---hard-green;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.links-link {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.links__link img {
+  width: 30px;
+  height: 30px;
+}
 
-
+// <!-- Раздел сайта блок "section-2" - Настя -->
+.section-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  // flex-wrap: wrap;
+  padding: 20px;
+  margin-left: 120px;
+  margin-right: 152px;
+  margin-bottom: 100px;
+}
+.about-us-pic {
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
+  position: relative;
+  width: 30%;
+  min-width: 392px;
+  min-height: 340px;
+}
+.about-us-pic__image, .about-us-pic__image_cup {
+  position: relative;
+  stroke-width: 4px;
+  stroke: #af9283; // смена цвета картинки по макету Figma для .svg картинки
+  width: 100%;
+  max-width: 364px;
+  height: auto;
+  display: block;
+  left: 6%;
+  top: 32%;
+}
+.about-us-pic__rectangle {
+  background-color: $primary---yellow-pink;
+  width: 380px;
+  height: 287px;
+  position: absolute;
+  top: 9%;
+  left: 0;
+  z-index: -1;
+}
+.about-us-pic__heading {
+  position: absolute;
+  min-width: 36px;
+  right: 70%;
+  top: 14%;
+  transform: rotate(270deg) translateY(-50%);
+}
+.about-us-text {
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
+  width: 70%;
+  margin-left: 40px;
+}
+.about-us-text__title {
+  margin-bottom: 10px;
+}
+.about-us-text__caption-1,
+.about-us-text__caption-2 {
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 189%;
+  letter-spacing: 0em;
+  color: $secondary---hard-green;
+  margin-bottom: 20px;
+}
 
 // <!-- Раздел сайта блок "section-3" - Настя -->
 .section-3 {
   display: flex;
   align-items: center;
+  flex-direction: row;
+  justify-content: center;
   // flex-wrap: wrap;
   padding: 20px;
-  margin: 40px;
+  margin-left: 120px;
+  margin-right: 152px;
+  margin-bottom: 50px;
 }
 .promotion-text {
-  flex: 1;
-  margin-right: 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
+  width: 70%;
+  margin-right: 40px;
 }
 .promotion-text__title {
   margin-bottom: 10px;
@@ -26,34 +222,27 @@
   color: $secondary---hard-green;
   margin-bottom: 20px;
 }
-// .promotion-text__button {   Перевела папаметры кнопки в коммментарии, так как ввела стилизацию для всех кнопок сайта 
-//   padding: 10px 20px;       в variables.scss. Потом можно удалить этот кусок. - Настя
-//   background-color: #2D635E;
-//   color: #fff;
-//   border: none;
-//   border-radius: 5px;
-//   cursor: pointer;
-//   font-size: 1em;
-// }
-// .promotion-text__button:hover {
-//   background-color: #00332c;
-// }
 .promotion-pic {
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
   position: relative;
-  // display: inline-block;
-  width: 410px;
-  height: 320px;
+  width: 30%;
+  min-width: 428px;
+  min-height: 320px;
 }
 .promotion-pic__image_big-cup {
   position: relative;
-  width: 60%;
+  width: 100%;
+  max-width: 236px;
+  height: auto;
   display: block;
   left: 15%;
 }
 .promotion-pic__rectangle {
-  background-color: #e3ebe7;
+  background-color: $secondary---light-gray;
   width: 410px;
-  height: 276px; 
+  height: 276px;
   position: absolute;
   top: 9%;
   left: 0;
@@ -61,9 +250,9 @@
 }
 .promotion-pic__heading {
   position: absolute;
-  right: -45px;
-  top: 10%;
-  transform: rotate(270deg) translateY(-50%);    
+  left: 85%;
+  top: 13%;
+  transform: rotate(270deg) translateY(-50%);
 }
 
 // <!-- Раздел сайта блок "section-4" - Раиса (откорректировала Настя с учетом ввода переменных шрифтов и цветов) -->
@@ -71,11 +260,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: $secondary---light-green;
   gap: 20px;
   padding: 20px;
 }
-
 .arrow {
   display: flex;
   align-items: center;
@@ -87,12 +276,10 @@
   cursor: pointer;
   text-decoration: none;
 }
-
 .arrow img {
   width: 20px;
   height: 20px;
 }
-
 .product {
   box-shadow: 0 23px 34px 0 rgba(35, 57, 55, 0.17);
   background: $main---white;
@@ -101,11 +288,9 @@
   text-align: center;
   width: 250px;
 }
-
 .product__title {
   margin-bottom: 10px;
 }
-
 .product__caption {
   font-family: $second-family;
   font-weight: 400;
@@ -117,17 +302,3 @@
   margin-bottom: 20px;
 }
 
-// .product__button {             Перевела папаметры кнопки в коммментарии, так как ввела стилизацию для всех кнопок сайта 
-//   background-color: #004d40;  в variables.scss. Потом можно удалить этот кусок. - Настя
-//   color: #fff;
-//   border: none;
-//   padding: 10px 20px;
-//   border-radius: 10px;
-//   font-family: "Arial", sans-serif; /* Временный шрифт */
-//   font-size: 1em;
-//   cursor: pointer;
-// }
-
-// .product__button:hover {
-//   background-color: #00332c;
-// }
