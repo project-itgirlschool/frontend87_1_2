@@ -2,11 +2,10 @@
 .section-1 {
   display: flex;
   justify-content: space-between;
-  margin: 120px; // при адаптиве в мобильной версии должны быть 0
+  margin: 120px; 
   margin-bottom: 120px;
 }
-.section-1-column-1,
-.section-1-column-2 {
+.section-1-column-1, .section-1-column-2 {
   flex: 1;
   display: flex;
 }
@@ -40,16 +39,14 @@
 .greeting-area-button-container__button_order-here-arrow {
   display: none;
 }
-.nested-container {
+.nested-container { 
   display: flex;
-  flex-direction: row;
+  flex-direction: row; 
   justify-content: space-between;
-  max-width: 601px; // нужно ли?
+  max-width: 601px;   // нужно ли?
   max-height: 513px;
 }
-.pic-arrow,
-.greeting-pic,
-.socials {
+.pic-arrow, .greeting-pic, .socials {
   flex: 1;
   position: relative;
 }
@@ -93,7 +90,7 @@
   z-index: -1;
 }
 .socials {
-  max-width: 64px;
+  max-width:  64px;
   min-height: 247px;
   display: flex;
   flex-direction: column;
@@ -146,7 +143,7 @@
   min-width: 392px;
   min-height: 340px;
 }
-.about-us-pic__image_cup {
+.about-us-pic__image, .about-us-pic__image_cup {
   position: relative;
   stroke-width: 4px;
   stroke: #af9283; // смена цвета картинки по макету Figma для .svg картинки
@@ -305,167 +302,3 @@
   margin-bottom: 20px;
 }
 
-// Медиа-запрос для экранов тэблетов шириной в диапазоне 720-1170px
-
-@media screen and (min-width: 720px) and (max-width: 1170px) {
-  .body {
-    margin: 0;
-    padding: 0;
-  }
-  h1 {
-    font-size: 58px;
-  }
-  .section-1,
-  .section-2,
-  .section-3 {
-    margin: 10px;
-  }
-  .greeting-area__tagline {
-    margin-bottom: 20px;
-    font-size: 24px;
-  }
-  .greeting-area__name {
-    margin-bottom: 20px;
-  }
-  .pic-arrow {
-    display: none;
-  }
-  .nested-container {
-    justify-content: space-between;
-    max-width: 400px; // нужно ли?
-    max-height: auto;
-    width: 100%;
-    flex-direction: column-reverse;
-  }
-  .socials {
-    top: 480px;
-  }
-  .socials-caption__text {
-    font-size: 25px;
-  }
-  .section-2 {
-    margin-left: 20px;
-    margin-right: 0;
-    margin-bottom: 70px;
-  }
-  .about-us-text {
-    margin-left: 20px;
-  }
-  .about-us-text__caption-1,
-  .about-us-text__caption-2,
-  .promotion-text__caption {
-    margin-bottom: 10px;
-  }
-  .section-3 {
-    margin-left: 20px;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  .promotion-text {
-    margin-right: 20px;
-  }
-  .arrow {
-    display: none;
-  }
-}
-
-// Медиа-запрос для экранов мобильных телефонов шириной 430px и меньше
-@media (max-width: 430px) {
-  .body {
-    margin: 0;
-    padding: 0;
-  }
-  .section-1,
-  .section-2 {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
-  .section-3 {
-    width: 100%;
-    flex-direction: column-reverse;
-    align-items: center;
-    margin: 0;
-  }
-  .section-1-column-2 {
-    display: none;
-  }
-  .section-1-column-1 {
-    width: 100%;
-    padding: 40px;
-    text-align: center;
-  }
-  .about-us-pic__heading,
-  .promotion-pic__heading,
-  .map__heading,
-  .greeting-area__button,
-  .promotion-text__button_order-now,
-  .section-1-column-2 {
-    display: none;
-  }
-  .greeting-area {
-    text-align: center;
-  }
-  .greeting-area__tagline {
-    font-weight: 400;
-    font-size: 19px;
-    text-align: center;
-  }
-  h1 {
-    font-size: 54px;
-    text-align: center;
-  }
-  h2,
-  h3 {
-    text-align: center;
-  }
-  .greeting-area__name {
-    font-size: 50px; // по макету 54px, но он не смотриться так
-  }
-  .greeting-area-button-container__button_order-here-arrow {
-    display: block;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  .section-2,
-  .section-3 {
-    padding: 0;
-  }
-  .about-us-pic {
-    max-width: 380px;
-    max-height: 277px;
-  }
-  .about-us-pic__image_cup {
-    width: 100%;
-    display: block;
-    stroke-width: 4px;
-    stroke: $secondary---hard-green; // смена цвета картинки по макету Figma для .svg картинки, не работает в медиазапросе
-    bottom: 3%;
-    left: 3%;
-  }
-  .about-us-pic__rectangle {
-    width: 390px;
-    height: 248px;
-    position: absolute;
-  }
-  .about-us-text,
-  .promotion-text {
-    width: 100%;
-    margin: 0;
-    padding: 20px;
-  }
-  .promotion-pic__rectangle {
-    width: 375px;
-    height: 320px;
-    position: absolute;
-  }
-  .promotion-pic__image_big-cup {
-    width: 100%;
-    display: block;
-    left: 23%;
-  }
-  .arrow {
-    display: none;
-  }
-}

@@ -1,1 +1,244 @@
 // <!-- Раздел сайта блок "section-5" - Аня -->
+
+
+
+
+// Медиазапросы для header - Раиса. Откорректировала Настя: нужно поменять местами мобильную и планшетную версии, так как мы делаем от макета для desktop.
+// Медиа-запрос для экранов тэблетов/планшетов шириной в диапазоне 720-1170px Раиса
+@media screen and (min-width: 720px) and (max-width: 1170px)  {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+    .menu {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .menu ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .menu a,
+    .menu__button {
+        width: 100%;
+        text-align: left;
+    }
+}
+// Медиа-запрос для экранов мобильных телефонов шириной 430px и меньше - Раиса
+@media (max-width: 430px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+    
+    .header {
+        margin: 10px; // Настя - добавила с учетом макета в figma
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 36px;
+        color: $main---black
+        }
+    .header .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .mobile-menu__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .mobile-menu .socials {
+        margin-top: 10px;
+    }
+    .menu__link {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 36px;
+        color: var(--main---black);
+    }
+}
+
+// Медиазапросы для secion-1, secion-2, secion-3  - Настя
+// Медиа-запрос для экранов тэблетов шириной в диапазоне 720-1170px - Настя
+@media screen and (min-width: 720px) and (max-width: 1170px) {
+    .body {
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        font-size: 58px;
+    }
+    .section-1, .section-2, .section-3 {
+        margin: 10px;
+    }
+    .greeting-area__tagline {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    .greeting-area__name {
+        margin-bottom: 20px;
+    }
+    .pic-arrow {
+        display: none;
+    }
+    .nested-container {
+        justify-content: space-between;
+      max-width: 400px; // нужно ли?
+        max-height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .socials {
+        top: 480px;
+    }
+    .socials-caption__text {
+        font-size: 25px;
+    }
+    .section-2 {
+        margin-left: 20px;
+        margin-right: 0;
+        margin-bottom: 70px;
+    }
+    .about-us-text {
+        margin-left: 20px;
+    }
+    .about-us-text__caption-1,
+    .about-us-text__caption-2,
+    .promotion-text__caption {
+        margin-bottom: 10px;
+    }
+    .section-3 {
+        margin-left: 20px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .promotion-text {
+        margin-right: 20px;
+    }
+    .arrow {
+        display: none;
+    }
+}
+
+  // Медиа-запрос для экранов мобильных телефонов шириной 430px и меньше - Настя
+@media (max-width: 430px) {
+    .body {
+        margin: 0;
+        padding: 0;
+    }
+    .section-1,
+    .section-2 {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .section-3 {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0;
+    }
+    .section-1-column-2 {
+        display: none;
+    }
+    .section-1-column-1 {
+        width: 100%;
+        padding: 40px;
+        text-align: center;
+    }
+    .about-us-pic__heading,
+    .promotion-pic__heading,
+    .map__heading,
+    .greeting-area__button,
+    .promotion-text__button_order-now,
+    .section-1-column-2 {
+        display: none;
+    }
+    .greeting-area {
+        text-align: center;
+    }
+    .greeting-area__tagline {
+        font-weight: 400;
+        font-size: 19px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 54px;
+        text-align: center;
+    }
+    h2,
+    h3 {
+        text-align: center;
+    }
+    .greeting-area__name {
+      font-size: 50px; // по макету 54px, но он не смотриться так
+    }
+    .greeting-area-button-container__button_order-here-arrow {
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .section-2,
+    .section-3 {
+        padding: 0;
+    }
+    .about-us-pic {
+        max-width: 380px;
+        max-height: 277px;
+    }
+    .about-us-pic__image_cup {
+        width: 100%;
+        display: block;
+        stroke-width: 4px;
+        stroke: $secondary---hard-green; // смена цвета картинки по макету Figma для .svg картинки, не работает в медиазапросе
+        bottom: 3%;
+        left: 3%;
+    }
+    .about-us-pic__rectangle {
+        width: 390px;
+        height: 248px;
+        position: absolute;
+    }
+    .about-us-text,
+    .promotion-text {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+    .promotion-pic__rectangle {
+        width: 375px;
+        height: 320px;
+        position: absolute;
+    }
+    .promotion-pic__image_big-cup {
+        width: 100%;
+        display: block;
+        left: 23%;
+    }
+    .arrow {
+        display: none;
+    }
+}

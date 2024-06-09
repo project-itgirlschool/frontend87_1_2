@@ -110,7 +110,12 @@ h4 {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  margin: 0;
+  margin: 120px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: justify;
+  color: var(--main---black);
 }
 
 .burger {
@@ -120,7 +125,7 @@ h4 {
 .logo {
   display: flex;
   align-items: center;
-  margin: 40px;
+  margin-right: 40px;
 }
 
 .logo__pic {
@@ -137,19 +142,13 @@ h4 {
 .menu {
   display: flex;
   align-items: center;
-  margin-right: 40px;
 }
 
 .menu ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-}
-
-.menu li {
-  margin-left: 20px;
 }
 
 .menu a {
@@ -159,6 +158,14 @@ h4 {
   font-size: 16px;
   font-weight: 400;
   padding: 50px;
+}
+
+.menu__link {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: justify;
+  color: var(--main---black);
 }
 
 .menu__button {
@@ -238,82 +245,36 @@ h4 {
   font-weight: 400;
 }
 
-.socials {
+.socials-in-menu {
   display: flex;
   justify-content: center;
   margin-top: 20px;
   padding: 0;
 }
 
-.socials .links {
+.socials-in-menu .links-in-menu {
   display: flex;
 }
 
-.socials .links__link {
+.socials-in-menu .links-in-menu__link {
   margin: 0 10px;
 }
 
-.socials .links__link a {
+.socials-in-menu .links-in-menu__link a {
   display: block;
   width: 24px;
   height: 24px;
 }
 
-@media (max-width: 430px) {
-  .menu {
-    display: none;
-  }
-  .menu-toggle {
-    display: block;
-  }
-  .header .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .mobile-menu {
-    display: flex;
-  }
-  .mobile-menu__close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 30px;
-    cursor: pointer;
-  }
-  .mobile-menu ul {
-    flex-wrap: wrap;
-  }
-  .mobile-menu .socials {
-    margin-top: 10px;
-  }
+.mobile-menu__bottom-strip {
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  height: 10px;
+  border-radius: 100px;
+  background-color: #000;
 }
-@media (max-width: 720px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
-  .menu {
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
-  .menu ul {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-  .menu li {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-  .menu a,
-  .menu__button {
-    width: 100%;
-    text-align: left;
-  }
-}
+
 .section-1 {
   display: flex;
   justify-content: space-between;
@@ -321,8 +282,7 @@ h4 {
   margin-bottom: 120px;
 }
 
-.section-1-column-1,
-.section-1-column-2 {
+.section-1-column-1, .section-1-column-2 {
   flex: 1;
   display: flex;
 }
@@ -372,9 +332,7 @@ h4 {
   max-height: 513px;
 }
 
-.pic-arrow,
-.greeting-pic,
-.socials {
+.pic-arrow, .greeting-pic, .socials {
   flex: 1;
   position: relative;
 }
@@ -482,7 +440,7 @@ h4 {
   min-height: 340px;
 }
 
-.about-us-pic__image_cup {
+.about-us-pic__image, .about-us-pic__image_cup {
   position: relative;
   stroke-width: 4px;
   stroke: #af9283;
@@ -656,6 +614,71 @@ h4 {
 }
 
 @media screen and (min-width: 720px) and (max-width: 1170px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+  .menu {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .menu ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .menu a,
+  .menu__button {
+    width: 100%;
+    text-align: left;
+  }
+}
+@media (max-width: 430px) {
+  .menu {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .header {
+    margin: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #000;
+  }
+  .header .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .mobile-menu {
+    display: flex;
+  }
+  .mobile-menu__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .mobile-menu .socials {
+    margin-top: 10px;
+  }
+  .menu__link {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--main---black);
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 1170px) {
   .body {
     margin: 0;
     padding: 0;
@@ -663,9 +686,7 @@ h4 {
   h1 {
     font-size: 58px;
   }
-  .section-1,
-  .section-2,
-  .section-3 {
+  .section-1, .section-2, .section-3 {
     margin: 10px;
   }
   .greeting-area__tagline {
