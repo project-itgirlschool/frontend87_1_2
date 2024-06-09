@@ -1,1 +1,74 @@
 // <!-- Раздел сайта блок "section-5" - Аня -->
+
+.contacts{
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+     /*background-color: blue ;*/
+    margin-left:  32px;
+    margin-right: 278px;
+    width: 100%;
+    margin-top: 30px;
+    ;
+}
+
+.map{
+    width: 50%;
+}
+
+.map__picture{
+    display: flex;
+    height: 351px;
+    width: 646px;
+    margin-left: 120px;
+}
+
+.stripe{
+  
+    /*background-color: yellow;*/
+    padding : 15px;
+    flex-grow: 1fr;
+    /*width: 176px;*/
+}
+
+.addresses{
+    
+    display: flex;
+    flex-direction: column;
+    /*background-color: yellowgreen;*/
+    flex-grow: 1fr;
+    width: 221px;
+    height: 258px;
+    /*margin-left: 942px;*/
+    /*margin-top: 35px;*/
+}
+
+.addresses__title{
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.addresses__address-1{
+    padding: 5px;
+    
+}
+.addresses__address-2{
+    padding: 5px;
+    
+}
+.addresses__address-3{
+    padding: 5px;
+    
+}
+.addresses__address-4{
+    padding: 5px;
+    
+}
+
+.copyright{
+    flex-direction: row;
+    align-self:flex-end;
+    width: 100%;
+}
+
+ 
