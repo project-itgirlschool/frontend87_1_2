@@ -262,8 +262,9 @@
   justify-content: center;
   flex-wrap: wrap;
   background-color: $secondary---light-green;
-  gap: 20px;
-  padding: 20px;
+  gap: 30px;
+  padding: 80px; // Настя - откорректировала с учетом общих полей с другими sections по макету в figma
+  margin-bottom: 100px;  // Настя - откорректировала с учетом общих полей с другими sections по макету в figma
 }
 .arrow {
   display: flex;
@@ -280,16 +281,37 @@
   width: 20px;
   height: 20px;
 }
-.product {
+.product { // Настя - откорректировала с учетом макетa figma
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   box-shadow: 0 23px 34px 0 rgba(35, 57, 55, 0.17);
   background: $main---white;
   border-radius: 20px;
-  padding: 20px;
+  padding: 40px; 
+  min-width: 337px; 
+  max-width: 340px;
+  min-height: 458px; 
+  max-height: 458px;
+
+  // min-height: 250px;
+
+  font-family: $second-family;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 189%;
+  letter-spacing: 0em;
+  color: $secondary---hard-green;
+}
+.product__title, .product__caption { // Настя - откорректировала с учетом макетa figma
+  margin-bottom: 40px;
   text-align: center;
-  width: 250px;
 }
 .product__title {
-  margin-bottom: 10px;
+  margin-bottom: 40px; // Настя - откорректировала с учетом макетa figma
 }
 .product__caption {
   font-family: $second-family;
@@ -299,6 +321,6 @@
   letter-spacing: 0em;
   text-align: center;
   color: $secondary---hard-green;
-  margin-bottom: 20px;
+  margin-bottom: 40px; // Настя - откорректировала с учетом макетa figma
 }
 
